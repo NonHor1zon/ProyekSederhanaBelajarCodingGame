@@ -222,6 +222,12 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
                         print('Kamu mendengar pintu ruangan tersebut didobrak dari luar')
                         print('Kamu segera mematikan senter dan diam bagaikan patung')
                         print('Setelah beberapa saat kamu mulai tertidur')
+                        EnterLanjut3 = input ('Tekan enter untuk melanjutkan')
+                        print('Kamu terbangun beberap jam kemudian')
+                        print('Kamu merasa sakit di beberapa bagian tubuhmu')
+                        print('Kamu melihat bahwa pintu ruangan tersebut sudah hancur didobrak oleh seseorang atau sesuatu?')
+                        print('Kamu segera membersihkan diri dan melihat apakah daerah sudah aman')
+                        print('Segera kamu berdiri dan keluar dari ruangan tersebut')
                     #
                 elif Keluar_BawahTanah_Kiri_1 == Jawab2 :
                     print('Kamu memilih untuk melewati terowongan kecil')
@@ -239,9 +245,18 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
         #
     #
 elif Jawab_DalamReruntuhan_1 == Jawab2 :
-    #
+    print('Kamu Membuka pintu ruangan')
+    print('Kamu melihat sekitar dan ruangan itu tampak rapi')
 elif Jawab_DalamReruntuhan_1 == Jawab3 :
-    #
+    print('Kamu membuka pintu perlahan')
+    print('Perpustakan tua tersebut sudah sangat tua dan berdebu')
+    print('Kamu berjalan kedalam ruangan')
+    print('Kamu tidak sengaja menyenggol sebuah barang hingga barang tersebut jatuh ke karpet di bawahnya')
+    print('Kamu mengambil barang tersebut dan mengamatinya')
+    print('Kamu menemukan lentera')
+    print('Kamu menyalakan lentera tersebut menggunakan korek api di sakumu')
 elif Jawab_DalamReruntuhan_1 == Jawab4 :
-    #
+    print('Kamu berjalan ke sebuah ruangan yang nampak seperti gudang')
+    print('Di dalam ruangan tersebut tampak beberapa rak dan terdapat pula beberapa pintu')
+    
 #Waaaa

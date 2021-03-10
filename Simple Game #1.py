@@ -1,11 +1,18 @@
 #Game Pertama
 #Pengembang
 '''
-1. Muhammad Yahya Ramadhan
+1. NonHor1zon
 2. Siapa?
 3. ...
 '''
-
+#Untuk command if dan elif jangan lupa menggunakan dua buah sama dengan "=="
+'''
+Catatan
+==  -> sama dengan
+!=  -> tidak sama dengan
+>   -> lebih besar
+<   -> lebih kecil
+'''
 NamaPemain = input("Masukkan Namamu : ")
 SapaAwalMulai = "Halo"
 SapaAwalMulai2 = SapaAwalMulai + " " + NamaPemain
@@ -139,7 +146,7 @@ print("B. Ruangan Yang Masih Bagus")
 print("C. Perpustakaan Tua")
 print("D. Gudang Tua")
 Jawab_DalamReruntuhan_1 = input ("Jawab : ")
-if Jawab_DalamReruntuhan_1 = Jawab1 :
+if Jawab_DalamReruntuhan_1 == Jawab1 :
     print ("Kamu mula berjalan ke ruangan tersebut")
     print ("Ruangan tersebut nampak berantakan")
     print ("Kamu mulai melihat-lihat sekitar")
@@ -148,7 +155,7 @@ if Jawab_DalamReruntuhan_1 = Jawab1 :
     print ("A. Kiri")
     print ("B. Kanan")
     Jawab_BawahTanah_1 = input ("Jawab : ")
-    if Jawab_BawahTanah_1 = Jawab1 :
+    if Jawab_BawahTanah_1 == Jawab1 :
         print('Kamu membuka pintu sebelah kiri')
         print('Pintu tersebut terasa lumayan berat')
         print('Kamu tetap berusaha, hingga pintu tersebut terbuka')
@@ -159,7 +166,7 @@ if Jawab_DalamReruntuhan_1 = Jawab1 :
         print('Apakah kamu ingin mencoba menyalakannya?')
         print('Yes/No')
         NyalaSenter_1 = input ('Jawab : ')
-        if NyalaSenter_1 = JawabYa :
+        if NyalaSenter_1 == JawabYa :
             print('Kamu mencoba menyalakan senter tersebut')
             print('Kamu mulai mencari baterai di ruangan tersebut')
             print('Kamu berdiri di depan sebuah rak tua')
@@ -168,7 +175,7 @@ if Jawab_DalamReruntuhan_1 = Jawab1 :
             print('Apakah Kamu Ingin Membukanya?')
             print('Yes/No')
             PetiKecil_1 = input ('Jawab : ')
-            if PetiKecil_1 = JawabYa :
+            if PetiKecil_1 == JawabYa :
                 print('Kamu memutuskan untuk membuka peti tersebut')
                 print('Kamu mengerahkan seluruh tenagamu')
                 print('Tapi Peti Tersebut Tidak Terbuka')
@@ -187,7 +194,7 @@ if Jawab_DalamReruntuhan_1 = Jawab1 :
                 print('Jalan mana yang kamu pilih?')
                 print('A. Atas, B. Bawah')
                 Keluar_BawahTanah_Kiri_1 = input ('Jawab : ')
-                if Keluar_BawahTanah_Kiri_1 = Jawab1 :
+                if Keluar_BawahTanah_Kiri_1 == Jawab1 :
                     print('Kamu memilih untuk pergi ke atas')
                     print('Ada dua cara untuk pergi keatas')
                     print('Yang pertama adalah menggunakan tangga')
@@ -196,14 +203,14 @@ if Jawab_DalamReruntuhan_1 = Jawab1 :
                     print('A. Gunakan Tangga')
                     print('B. Susun Barang-Barang')
                     Keluar_BawahTanah_Kiri_Naik = input ('Jawab : ')
-                    if Keluar_BawahTanah_Kiri_Naik = Jawab1 :
+                    if Keluar_BawahTanah_Kiri_Naik == Jawab1 :
                         print('Kamu mulai megangkat tangga yang berada di ujung ruangan')
                         print('Entah kenapa kamu merasa tangga itu tidak seberat tangga pada umumnya')
                         print('Kamu mulai memanjat tangga tersebut')
                         print('Pada saat yang sama kamu mendengar suara langkah kaki dari arah luar ruangan')
                         print('Keringat mulai menetes dari dahimu')
                         print('Kamu segera naik keatas dan menutup lubang tempat kamu naik tadi')
-                    if Keluar_BawahTanah_Kiri_Naik = Jawab2 :
+                    if Keluar_BawahTanah_Kiri_Naik == Jawab2 :
                         print('Kamu memilih untuk memindahkan beberapa barang untuk naik keatas')
                         print('Setelah kamu memindahkan rak, kamu menemukan sebuah laci dibaliknya')
                         print('Kamu membuka laci tersebut dan menemukan sebuah kunci warna kuning')
@@ -216,25 +223,25 @@ if Jawab_DalamReruntuhan_1 = Jawab1 :
                         print('Kamu segera mematikan senter dan diam bagaikan patung')
                         print('Setelah beberapa saat kamu mulai tertidur')
                     #
-                elif Keluar_BawahTanah_Kiri_1 = Jawab2 :
+                elif Keluar_BawahTanah_Kiri_1 == Jawab2 :
                     print('Kamu memilih untuk melewati terowongan kecil')
                 #
-            elif PetiKecil_1 = JawabTidak :
+            elif PetiKecil_1 == JawabTidak :
                 print('Kamu berjalan keluar dari ruangan tersebut')
                 print('Kamu lantas bergerak menuju ruang di seberang')
                 #
             #
-        elif NyalaSenter_1 = JawabTidak :
+        elif NyalaSenter_1 == JawabTidak :
             print('Kamu memasukkan senter tersebut kedalam tas')
             print('Kamu terus menjelajahi ruangan itu dalam gelap')
         #
-    elif Jawab_BawahTanah_1 = Jawab2 :
+    elif Jawab_BawahTanah_1 == Jawab2 :
         #
     #
-elif Jawab_DalamReruntuhan_1 = Jawab2 :
+elif Jawab_DalamReruntuhan_1 == Jawab2 :
     #
-elif Jawab_DalamReruntuhan_1 = Jawab3 :
+elif Jawab_DalamReruntuhan_1 == Jawab3 :
     #
-elif Jawab_DalamReruntuhan_1 = Jawab4 :
+elif Jawab_DalamReruntuhan_1 == Jawab4 :
     #
 #Waaaa

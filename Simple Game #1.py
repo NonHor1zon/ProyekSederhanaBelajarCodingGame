@@ -228,22 +228,51 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
                         print('Kamu melihat bahwa pintu ruangan tersebut sudah hancur didobrak oleh seseorang atau sesuatu?')
                         print('Kamu segera membersihkan diri dan melihat apakah daerah sudah aman')
                         print('Segera kamu berdiri dan keluar dari ruangan tersebut')
-                    #
+                    #Untuk Perpanjang, Jangan Dihapus
                 elif Keluar_BawahTanah_Kiri_1 == Jawab2 :
                     print('Kamu memilih untuk melewati terowongan kecil')
-                #
+                    print('Kamu menggeser sofa besar hingga terdapat cukup ruang untuk dirimu')
+                    print('Setelah kamu masuk kamu langsung menutup lubang masuk tadi dengan mendorong dan menarik sofa dari dalam hingga lubang tersebut tak terlihat lagi')
+                    print('Segera setelah itu, kamu mendengar ada suara sesuatu mendobrak pintu ruangan itu')
+                    print('kamu terdiam untuk sesaat dan memulai perjalanan ke ujung terowongan yang satu lagi')
+                    print('Setelah beberapa saat kamu sampai diujung terowongan itu')
+                    print('Kamu sampai pada sebuah ruangan berdebu dimana terdapat sebuah lentera yang sangat tua menyinari ruangan itu')
+                    print('Lentera tersebut sangat tua dan berdebu, umurnya bisa dibilang ratusan tahun')
+                    print('Tetapi entah kenapa api yang ada didalamnya masih bersinar dengan terang hingga sekarang')
+                    EnterLanjut4 = input ('Tekan ENTER untuk melanjutkan')
+                    print('kamu mulai melihat ke sekitar ruangan tersebut')
+                    print('Ada berbagai macam barang antik dan semua itu tampaknya dibuat dengan sangat hati-hati')
+                    print('disisi pojok ruangan tersebut ada semacam frame suatu barang')
+                    print('Bentuknya sangat familiar')
+                    print('Apa yang ingin kamu lakukan')
+                    print('A. Melihat lagi lingkungan sekitar')
+                    print('B. Beristirahat')
+                    print('C. Memeriksa Barang Bawaan')
+                    print('D. Bernyanyi')
+                    MysteriousRoom_1_1 = input('Jawab : ')
+                    if MysteriousRoom_1_1 = Jawab1 :
+                        print('')
+                    elif MysteriousRoom_1_1 = Jawab2 :
+                        print('')
+                    elif MysteriousRoom_1_1 = Jawab3 :
+                        print('')
+                    elif MysteriousRoom_1_1 = Jawab4 :
+                        print('')
+                    #Untuk Perpanjang, Jangan Dihapus
+                #Untuk Perpanjang, Jangan Dihapus
             elif PetiKecil_1 == JawabTidak :
                 print('Kamu berjalan keluar dari ruangan tersebut')
                 print('Kamu lantas bergerak menuju ruang di seberang')
-                #
-            #
+                #Untuk Perpanjang, Jangan Dihapus
+            #Untuk Perpanjang, Jangan Dihapus
         elif NyalaSenter_1 == JawabTidak :
             print('Kamu memasukkan senter tersebut kedalam tas')
             print('Kamu terus menjelajahi ruangan itu dalam gelap')
-        #
+        #Untuk Perpanjang, Jangan Dihapus
     elif Jawab_BawahTanah_1 == Jawab2 :
-        #
-    #
+        print()
+        #Untuk Perpanjang, Jangan Dihapus
+    #Untuk Perpanjang, Jangan Dihapus
 elif Jawab_DalamReruntuhan_1 == Jawab2 :
     print('Kamu Membuka pintu ruangan')
     print('Kamu melihat sekitar dan ruangan itu tampak rapi')

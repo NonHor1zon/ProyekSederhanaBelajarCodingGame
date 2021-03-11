@@ -101,7 +101,7 @@ if Jawab_KetemuReruntuhan == Jawab1 :
 elif Jawab_KetemuReruntuhan == Jawab2 :
     print("Kamu Mencari Sumber Air, Namun Kamu Tidak Dapat Menemukannya")
     print("Stamina -10")
-    Stamina -10
+    Stamina = Stamina -10
     print("Kamu Memilih Untuk Memasuki Reruntuhan")
     print("Seketika Setelah Kamu Masuk, Pintu Reruntuhan Mulai Runtuh")
     print('Kamu Bergumam Dalam Hati "Ada Alasan Tempat Ini Disebut Reruntuhan"')
@@ -110,7 +110,7 @@ elif Jawab_KetemuReruntuhan == Jawab3 :
     print("Kamu Tertidur Dengan Pulas Di Atas Rumput")
     print("Ketika Kamu Bangun, Waktu Sudah Berjalan Sekitar 2 Jam")
     print("Stamina + 20")
-    Stamina + 20
+    Stamina = Stamina + 20
     print("Pada Akhirnya Kamu Memutuskan Untuk Masuk Ke Dalam Reruntuhan")
 elif Jawab_KetemuReruntuhan == Jawab4 :
     print("Kamu Memutuskan Untuk Membangun Tenda")
@@ -169,6 +169,8 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
         if NyalaSenter_1 == JawabYa :
             print('Kamu mencoba menyalakan senter tersebut')
             print('Kamu mulai mencari baterai di ruangan tersebut')
+            print('Stamina -10')
+            Stamina = Stamina - 10
             print('Kamu berdiri di depan sebuah rak tua')
             print('Kamu mengambil baterai dimeja dan memasangkannya ke senter')
             print('Kamu menemukan sebuah peti kecil')
@@ -178,6 +180,8 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
             if PetiKecil_1 == JawabYa :
                 print('Kamu memutuskan untuk membuka peti tersebut')
                 print('Kamu mengerahkan seluruh tenagamu')
+                print('Stamina - 10')
+                Stamina = Stamina -10
                 print('Tapi Peti Tersebut Tidak Terbuka')
                 print('Kamu merasa lelah dan tersandung sebuah benda')
                 print('Kamu melihat benda tersebut')

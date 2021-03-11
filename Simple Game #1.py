@@ -21,21 +21,18 @@ print ('Selamat datang di Game Buatanku')
 print ('Tolong Dimaklumi Baru Game Pertama')
 JawabMulai = "Start"
 JawabKeluar = "Exit"
-NilaiDasar = 0
 MasukanAwal = input ("Silahkan Memilih Antara, Start atau Exit : ")
 if MasukanAwal == JawabKeluar:
     print ('Masih Dikembangkan')#Karena Syntax Error, Line Ini Dihapus. Line :" exit() "
     quit
 elif MasukanAwal == JawabMulai:
     print ('Mari Kita Mulai')
-    NilaiDasar + 1
 while (MasukanAwal != JawabMulai and JawabKeluar):
     MasukanAwal = input ("Coba Lagi : ")
 if MasukanAwal == JawabKeluar:
     print ('Masih Dikembangkan')
 elif MasukanAwal == JawabMulai:
     print ('Mari Kita Mulai')
-    NilaiDasar + 1
 print ('Loading')
 print ('Loading')
 print ('Loading')
@@ -226,6 +223,8 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
                         print('Kamu mendengar pintu ruangan tersebut didobrak dari luar')
                         print('Kamu segera mematikan senter dan diam bagaikan patung')
                         print('Setelah beberapa saat kamu mulai tertidur')
+                        print('Stamina + 20')
+                        Stamina = Stamina + 20
                         EnterLanjut3 = input ('Tekan enter untuk melanjutkan')
                         print('Kamu terbangun beberap jam kemudian')
                         print('Kamu merasa sakit di beberapa bagian tubuhmu')

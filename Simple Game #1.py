@@ -278,7 +278,14 @@ if Jawab_DalamReruntuhan_1 == Jawab1 :
     #Untuk Perpanjang, Jangan Dihapus
 elif Jawab_DalamReruntuhan_1 == Jawab2 :
     print('Kamu Membuka pintu ruangan')
-    print('Kamu melihat sekitar dan ruangan itu tampak rapi')
+    print('Kamu melihat sekitar dan ruangan itu tampak lumayan panjang')
+    print('"Tempat ini lebih seperti lorong" Pikirmu')
+    print('Selain itu ruangan tersebut tidak terlalu gelap')
+    print('Terdapat semacam lentera yang sangat antik berjejer dengan rapi')
+    print('Dalam lentera tersebut tepancar api biru yang tidak masuk akal')
+    print('Kamu diam sejenak dan Memutuskan untuk masuk ke ruangan tersebut')
+    print('Kamu segera masuk dan menutup pintu tempat kamu tadi')
+    print('Apakah kamu ingin mengunci pintu tersebut?')
 elif Jawab_DalamReruntuhan_1 == Jawab3 :
     print('Kamu membuka pintu perlahan')
     print('Perpustakan tua tersebut sudah sangat tua dan berdebu')

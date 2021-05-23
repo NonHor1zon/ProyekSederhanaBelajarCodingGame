@@ -16,20 +16,20 @@ Merupakan pengembangan dari Simple Game #1 dengan Command Yang Lebih Mendalam
 '''
 DaftarNamaVariabel - Jawab
 '''
-JawabA = "A"
-JawabB = "B"
-JawabC = "C"
-JawabD = "D"
-JawabYa = "Ya"
-JawabTidak = "Tidak"
-JawabKiri = "Kiri"
-JawabKanan = "Kanan"
-JawabAtas = "Atas"
-JawabBawah = "Bawah"
-JawabLakukan = "Lakukan"
-JawabJangan = "Jangan"
-JawabSetuju = "Setuju"
-JawabTolak = "Tolak"
+JawabA = "A" or "a"
+JawabB = "B" or "b"
+JawabC = "C" or "c"
+JawabD = "D" or "d"
+JawabYa = "Ya" or "ya" or "YA"
+JawabTidak = "Tidak" or "tidak" or "TIDAK"
+JawabKiri = "Kiri" or "kiri" or "KIRI"
+JawabKanan = "Kanan" or "kanan" or "KANAN"
+JawabAtas = "Atas" or "atas" or "ATAS"
+JawabBawah = "Bawah" or "bawah" or "BAWAH"
+JawabLakukan = "Lakukan" or "lakukan" or "LAKUKAN"
+JawabJangan = "Jangan" or "jangan" or "JANGAN"
+JawabSetuju = "Setuju" or "setuju" or "SETUJU"
+JawabTolak = "Tolak" or "tolak" or "TOLAK"
 #---------------------
 '''
 DaftarNamaVariabel - Awal
@@ -86,6 +86,10 @@ Start Menu Awal, Selesai
 Poin Karakter
 '''
 PoinBeruang = 1
+KoinAntik = 0
+Pintu_RuangBagus1 = 0
+Senter = 0
+Cahaya = 0
 #---------------------
 '''
 Gameplay Part 1, Mulai
@@ -190,16 +194,35 @@ def Reruntuhan_RuangBawah_Masuk():
     print ("B. Kanan")
     Reruntuhan_RuangBawah_Masuk_Jawab()
 def Reruntuhan_RuangBagus_Masuk():
+    global Cahaya
     print('Kamu Membuka pintu ruangan')
     print('Kamu melihat sekitar dan ruangan itu tampak lumayan panjang')
     print('"Tempat ini lebih seperti lorong" Pikirmu')
     print('Selain itu ruangan tersebut tidak terlalu gelap')
     print('Terdapat semacam lentera yang sangat antik berjejer dengan rapi')
     print('Dalam lentera tersebut tepancar api biru yang tidak masuk akal')
+    Cahaya += 2
     print('Kamu diam sejenak dan Memutuskan untuk masuk ke ruangan tersebut')
     print('Kamu segera masuk dan menutup pintu tempat kamu tadi')
     print('Apakah kamu ingin mengunci pintu tersebut?')
+    print('Ya / Tidak')
     Reruntuhan_RuangBagus_Pintu()
+def Reruntuhan_RuangBagus_Pintu():
+    global Pintu_RuangBagus1
+    Reruntuhan_RuangBagus_Pintu1_Kunci = input ('Jawab : ')
+    if Reruntuhan_RuangBagus_Pintu1_Kunci == JawabYa :
+        Pintu_RuangBagus1 += 1
+        print('Kamu memutuskan untuk mengunci pintu tersebut')
+        print('Kamu memasukkan kunci pintu itu kedalam kantongmu')
+        print('Kamu mulai berjalan menuju dalam ruangan')
+        Reruntuhan_RuangBagus_Lorong()
+    elif Reruntuhan_RuangBagus_Pintu1_Kunci == JawabTidak :
+        print ('Kamu memutuskan untuk tidak mengunci pintu tersebut')
+        print ('Kamu kembali melihat ke arah lorong tersebut')
+        print ('Kamu mulai berjalan ke arah lorong tersebut')
+        Reruntuhan_RuangBagus_Lorong()
+    else:
+        Reruntuhan_RuangBagus_Pintu()
 def Reruntuhan_PerpusTua_Masuk():
     print('Kamu membuka pintu perlahan')
     print('Perpustakan tua tersebut sudah sangat tua dan berdebu')
@@ -241,7 +264,29 @@ def Reruntuhan_PerpusTua_Masuk_2():
 def Reruntuhan_GudangTua_Masuk():
     print('Kamu berjalan ke sebuah ruangan yang nampak seperti gudang')
     print('Di dalam ruangan tersebut tampak beberapa rak dan terdapat pula beberapa pintu')
-    print('')
+    print('Kamu melihat barang-barang yang ada di rak tersebut')
+    print('Kamu melihat koin tua')
+    print('Apakah kamu ingin mengambil koin tua tersebut?')
+    print('A. Ambil')
+    print('B. Tidak')
+    Reruntuhan_GudangTua_KoinAntik()
+def Reruntuhan_GudangTua_KoinAntik(): 
+    global KoinAntik
+    Reruntuhan_GudangTua_KoinAntik_Ambil = input ('Jawab : ')
+    if Reruntuhan_GudangTua_KoinAntik_Ambil == JawabA :
+        print('Kamu memutuskan untuk mengambil koin antik tadi')
+        KoinAntik += 1
+        print('Koin Antik + 1')
+        EnterLanjut_GudangTua_Ruang1()
+    elif Reruntuhan_GudangTua_KoinAntik_Ambil == JawabB :
+        print('Kamu memutuskan untuk meninggalkan koin antik tadi')
+        print('Kamu kembali menelusuri ruangan')
+        EnterLanjut_GudangTua_Ruang1()
+    else:
+        Reruntuhan_GudangTua_KoinAntik_Ambil1()
+def EnterLanjut_GudangTua_Ruang1():
+    EnterLanjut_GudangTuaRuang1 = input ('Tekan ENTER untuk lanjut')
+    Reruntuhan_GudangTua_Masuk2()
 '''
 Gameplay Part 1, Selesai
 '''
@@ -249,6 +294,49 @@ Gameplay Part 1, Selesai
 '''
 Gameplay Part 2, Mulai
 '''
+def Reruntuhan_RuangBawah_Masuk_Jawab():
+    Reruntuhan_RuangBawah_Masuk_Jawaban = input('Jawab : ')
+    if Reruntuhan_RuangBawah_Masuk_Jawaban == JawabKiri :
+        print('Kamu memilih untuk pergi ke ruangan kiri')
+        Reruntuhan_RuangBawah_Kiri_Masuk()
+    if Reruntuhan_RuangBawah_Masuk_Jawaban == JawabKanan :
+        print('Kamu memilih untuk pergi ke ruangan kanan')
+        Reruntuhan_RuangBawah_Kanan_Masuk()
+    else:
+        Reruntuhan_RuangBawah_Masuk_Jawab()
+def Reruntuhan_RuangBawah_Kiri_Masuk():
+    print('Kamu membuka pintu sebelah kiri')
+    print('Pintu tersebut terasa lumayan berat')
+    print('Kamu tetap berusaha, hingga pintu tersebut terbuka')
+    print('Kamu menemukan selembar perkamen tua yang sudah agak buram')
+    print('Perkamen tersebut dibuat dari bahasa yang tidak kamu ketahui')
+    print('Kamu mulai kembali melihat sekeliling')
+    print('Kamu menemukan senter')
+    print('Apakah kamu ingin mencoba menyalakannya?')
+    print('Ya / Tidak')
+def Reruntuhan_RuangBawah_Kiri_Senter():
+    global Senter
+    global Cahaya
+    global Stamina
+    Reruntuhan_RuangBawah_Kiri_NyalaSenter = input ('Jawab : ')
+    if Reruntuhan_RuangBawah_Kiri_NyalaSenter == JawabYa :
+        print('Kamu mencoba menyalakan senter tersebut')
+        print('Kamu mulai mencari baterai di ruangan tersebut')
+        print('Stamina -10')
+        Stamina -= 10
+        Senter += 1
+        Cahaya += 1
+        print('Kamu berdiri di depan sebuah rak tua')
+        print('Kamu mengambil baterai dimeja dan memasangkannya ke senter')
+        Reruntuhan_RuangBawah_Kiri_PetiKecil()
+    elif Reruntuhan_RuangBawah_Kiri_NyalaSenter == JawabTidak :
+        print('Kamu memasukkan senter tersebut kedalam tas')
+        Senter += 1
+        print('Kamu terus menjelajahi ruangan itu dalam gelap')
+        Reruntuhan_RuangBawah_Kiri_PetiKecil()
+    else :
+        Reruntuhan_RuangBawah_Kiri_Senter()
+
 '''
 Gameplay Part 2, Selesai
 '''
